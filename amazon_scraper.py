@@ -46,7 +46,7 @@ def send_mail():
   server.starttls()
   server.ehlo()
 
-  server.login('jelonmusk@gmail.com', 'Juvairiya10#')
+  server.login('<AMAZON-LOGIN-MAIL-ID>', '<PASSWORD>')
 
   subject = 'Price Fell Down'
   body = "Check the amazon link https://www.amazon.in/dp/B08M8KCRQ4/ref=cm_sw_r_wa_apa_i_Sfl2FbWHXP2NX?psc=1 "
@@ -54,8 +54,8 @@ def send_mail():
   msg = f"Subject: {subject}\n\n{body}"
   
   server.sendmail(
-    'jelonmusk@gmail.com',
-    'zabiap@gmail.com',
+    '<AMAZON-LOGIN-MAIL-ID>',
+    'RECEIVERS-MAIL-ID>',
     msg
   )
   #print a message to check if the email has been sent
